@@ -1,56 +1,67 @@
-# ReconStorm 🔍
+# 🔍 ReconStorm
 
-**Modular Recon Tool for Bug Bounty Hunters & Security Researchers**  
-Built with Python, Go-based tools, and real-world recon workflows.
-
----
-
-## Features
-
-- 🔍 Subdomain Enumeration via `subfinder`
-- 🧠 DNS Recon using `dnsrecon`
-- ⚡ Fast Port Scanning with `naabu`
-- 🕵️ Wayback URL Collection using `gau`
-- 🌐 Related Domains Finder via `amass intel`
-- ✅ `--all` flag to run everything
-- 📄 Outputs organized by domain
-- 🧾 Auto-generated `recon_summary.txt` file for consolidated results
+**Modular Reconnaissance Automation Framework**  
+Built for bug bounty hunters & security researchers.  
+Perform deep recon on any domain with a single command.
 
 ---
 
-## Installation
+## 🚀 Features
 
-Install these tools before running:
+- ✅ Subdomain Enumeration (`subfinder`)
+- ✅ DNS Reconnaissance (`dnsrecon`)
+- ✅ Port Scanning (`naabu`)
+- ✅ Wayback URL Collection (`gau`)
+- ✅ JavaScript File Analysis (for endpoints and secrets)
+- ✅ URL Parameter Discovery
+- ✅ Directory Bruteforcing (`ffuf`)
+- ✅ Tech Stack Detection (`httpx`)
+- ✅ Related Domain Enumeration (`amass intel`)
+- ✅ Auto Markdown Report Generation (`recon_report.md`)
+
+---
+
+## 📦 Installation
 
 ```bash
+git clone https://github.com/alihassankhan76/ReconStorm.git
+cd ReconStorm
+````
+
+### ⚙️ Install Dependencies
+
+```bash
+# Go-based tools
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install -v github.com/lc/gau@latest
-sudo apt install amass dnsrecon -y
-````
+
+# Apt-based tools
+sudo apt install dnsrecon amass ffuf -y
+```
 
 ---
 
-## Usage
+## 💡 Usage
+
+Run all modules on a target:
 
 ```bash
 python3 main.py --target example.com --all
 ```
 
-Or use specific modules:
+Or run individual modules:
 
 ```bash
 python3 main.py --target example.com --subdomains
-python3 main.py --target example.com --ports
-python3 main.py --target example.com --wayback
+python3 main.py --target example.com --js
+python3 main.py --target example.com --report
 ```
-
-Results are saved under:
-`results/example.com/`
 
 ---
 
-## Example Output Structure
+## 📁 Output Directory Structure
 
 ```
 results/example.com/
@@ -58,23 +69,19 @@ results/example.com/
 ├── dns_info.txt
 ├── open_ports.txt
 ├── wayback_urls.txt
+├── js_endpoints.txt
+├── secrets.txt
+├── discovered_params.txt
+├── dirs_found.txt
+├── tech_stack.txt
 ├── related_domains.txt
-└── recon_summary.txt
+└── recon_report.md
 ```
 
 ---
 
-## License
+## 🧠 Author
 
-MIT License
-
----
-
-## Author
-
-**Ali Hassan Khan**
-[GitHub](https://github.com/alihassankhan76)
-
-
-
+Developed by [Ali Hassan Khan](https://github.com/alihassankhan76)
+Bug Bounty Hunter | Security Automation Enthusiast
 
