@@ -1,0 +1,26 @@
+[*] Performing General Enumeration of Domain:taxdoo.com
+[*] DNSSEC is configured for taxdoo.com
+[*] DNSKEYs:
+[*] 	None ZSK ECDSAP256SHA256 eab5e3e227328a7da190e3fb756dd76d b60d15115462811f490d11eba4b17e6c 628170ebfe9c4618c60cd93d86b97f9f a034f6f34716df1a5eb4f771a93fb21c
+[*] 	None ZSK ECDSAP256SHA256 423694ec2b8988deaa79d61d4d022e71 285c8a94b32bc8dce269afd1ce85d8f9 466b0e826ffb88e908fd6e0e8ac692a8 d0084e9e10b835852d86b51f1a907c4c
+[*] 	None KSk ECDSAP256SHA256 bc1b9e68722c244f42a2b5363c15d9e4 dde752bea255626bb5b16e23f0247b8d 945ee85f790a2bca265c988e69ba10db fb40280dcf74d8a6933e43bc38101893
+[*] 	 SOA ns-798.awsdns-35.net 205.251.195.30
+[*] 	 NS ns-1636.awsdns-12.co.uk 205.251.198.100
+[*] 	 NS ns-1636.awsdns-12.co.uk 2600:9000:5306:6400::1
+[*] 	 NS ns-1173.awsdns-18.org 205.251.196.149
+[*] 	 NS ns-1173.awsdns-18.org 2600:9000:5304:9500::1
+[*] 	 NS ns-409.awsdns-51.com 205.251.193.153
+[*] 	 NS ns-409.awsdns-51.com 2600:9000:5301:9900::1
+[*] 	 NS ns-798.awsdns-35.net 205.251.195.30
+[*] 	 NS ns-798.awsdns-35.net 2600:9000:5303:1e00::1
+[*] 	 MX alt4.aspmx.l.google.com 74.125.200.27
+[*] 	 MX alt1.aspmx.l.google.com 142.250.153.26
+[*] 	 MX alt2.aspmx.l.google.com 142.251.9.26
+[*] 	 MX aspmx.l.google.com 142.251.168.26
+[*] 	 MX alt3.aspmx.l.google.com 142.250.150.27
+[*] 	 MX alt4.aspmx.l.google.com 2404:6800:4003:c00::1a
+[*] 	 MX alt1.aspmx.l.google.com 2a00:1450:4013:c16::1b
+[*] 	 MX alt2.aspmx.l.google.com 2a00:1450:4025:c03::1a
+[*] Enumerating SRV Records
+[-] No SRV Records Found for taxdoo.com
+[+] 0 Records Found
