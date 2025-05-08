@@ -75,8 +75,6 @@ MIT License
 **Ali Hassan Khan**
 [GitHub](https://github.com/alihassankhan76)
 
-```
 
----
 
 
